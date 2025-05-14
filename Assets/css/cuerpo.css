@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color_titulo: #021024;
+    --color_fondo_1: #C1E8FF;
+    --color_subtitulo: #052659;
+    --color_complementario_1: #5683B3;
+    --color_complementario_2: #7DA0CA;
+}
+/* llevar root a archivo css y usar de esta manera⬇️ */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.carrusel{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 237, 237, 0.842);
+    border-radius: 40px;
+}
+.carrusel img{
+    height: 90%;
+}
+.section{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#sub{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+    color: var(--color_subtitulo);
+}
+.section .card{
+    padding: 0;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.section .card img {
+    height: 60%;
+}
