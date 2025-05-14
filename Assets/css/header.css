@@ -1,0 +1,123 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1f1f1f;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Fix the grid-template-rows to use proper units */
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    gap: 16px; /* Add some spacing between grid areas */
+}
+
+#header {
+    grid-area: header;
+    background-color: #2a2a2a; /* Add background to visualize */
+    padding: 0;
+}
+
+#category-nav {
+    background-color: #2a2a2a;
+    padding: 1rem;
+
+    & ul {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+}
+
+#main {
+    grid-area: main;
+    background-color: #2a2a2a;
+    padding: 1rem;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #2a2a2a;
+    padding: 1rem;
+}
+
+/*______________________________________________________________________________*/
+/*______________________________________________________________________________*/
+/*______________________________________________________________________________*/
+/*______________________________________________________________________________*/
+/*______________________________________________________________________________*/
+
+
+#header-section {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 0.35fr 0.3fr 0.35fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 16px;
+}
+
+#news-row {
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    color: #1f1f1f;
+}
+
+
+.header-article {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*______________________________________________________________________________*/
+
+
+#carrusel{
+    width: 80%;
+    margin: auto;
+}
+
+/*______________________________________________________________________________*/
+
+
+
+#header-user-options-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    & div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    & input {
+        height: 20px;
+    }
+
+    & button {
+        box-sizing: border-box
+    }
+}
+
+#logo-div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
