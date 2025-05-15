@@ -11,7 +11,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Fix the grid-template-rows to use proper units */
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-areas: 
         "header header header"
         "main main main"
@@ -42,7 +42,6 @@ body {
 #main {
     grid-area: main;
     background-color: #2a2a2a;
-    padding: 1rem;
 }
 
 #footer {
@@ -52,11 +51,6 @@ body {
 }
 
 /*______________________________________________________________________________*/
-/*______________________________________________________________________________*/
-/*______________________________________________________________________________*/
-/*______________________________________________________________________________*/
-/*______________________________________________________________________________*/
-
 
 #header-section {
     width: 100%;
@@ -78,6 +72,7 @@ body {
 .header-article {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 /*______________________________________________________________________________*/
@@ -120,4 +115,19 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+svg {
+    fill:  white;
+}
+
+button {
+    border-radius: 10px;
+    border-style: none;
+    color: #1f1f1f;
+    cursor: pointer;
+
+    & svg {
+        fill: #1f1f1f;
+    }
 }
