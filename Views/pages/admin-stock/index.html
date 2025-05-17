@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./sideBar.css">
+
+    <!-- content -->
+     <link rel="stylesheet" href="./stock-styles.css">
+    <title>BUILDIFY</title>
+</head>
+<body>
+    <header id="header">
+        <section id="news-row">
+            Echa un vistazo a nuestros descuentos!
+        </section>
+        <section id="header-section">
+
+            <article class="header-article">
+                <div id="logo-header-div">
+                    <h1>BUILDIFY</h1>
+                    <svg role="img" width="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>THE FINALS</title><path d="M18.523 19.319H24L14.965 6.295c-.626-.904-1.51-1.614-2.847-1.614-1.38 0-2.264.775-2.889 1.614L0 19.319h5.261l3.372-4.759 3.256 4.759h5.478l-5.934-8.712.599-.846 6.491 9.558Zm0 0"/></svg>
+                </div>
+            </article>
+
+            <article class="header-article">
+                <nav id="category-nav">
+                    <ul>
+                        <li>Chasis</li>
+                        <li>RAM</li>
+                        <li>Refrigeraciones</li>
+                        <li>Procesadores</li>
+                        <li>Boards</li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="header-article">
+                <div id="header-user-options-section">
+                    <div>
+                        <input id="search-bar" placeholder="Here your components" type="text">
+                        <button>
+                            0
+                        </button>
+                    </div>
+                    <button>
+                        <svg role="img" width="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Republic of Gamers</title><path d="M21.3906 5.5833c-1.3467.0115-3.4338.19541-5.9375.97657-1.6024.49851-3.916 2.74203-8.22459 6.90823-.56973.3204-2.67017-.8912-3.88085-1.461 0 0 1.9929 3.1699 2.70507 4.0957 1.06825 1.46 3.02735 2.3145 3.02735 2.3145-.17804-.1781-1.53019-1.6029-1.92188-2.4219-.24926-.3917.03418-.9624 1.95703-2.3867C10.86 12.3268 17.0569 7.09358 23.0391 5.66924c0 0-.601-.09488-1.6485-.08593V5.5833ZM24 7.7708c-2.0653.21366-4.06.81878-5.9473 1.70899C14.2783 11.2602 7.9043 15.8177 7.9043 15.8177c.28486.178.5706.3556.85546.498 3.06234 1.3531 7.58484 2.1716 8.43944 1.8867 2.3858-.7833 5.056-5.8026 5.875-8.1172 0 0-2.4933.9968-5.0215 2.1719-2.1009.9971-4.414 2.1368-4.414 2.1368l5.875-1.7813s-1.5676 3.7036-3.6328 4.1309c-2.0653.4273-5.6973-1.0332-5.6973-1.0332.2849-.2493 4.1302-3.0629 13.1035-6.73051.3917-.28487.6417-.74608.7129-1.20898V7.7708ZM0 11.2942c.35608.9615.8194 1.8525 1.35352 2.7071.64094.819 3.27477 1.4952 3.63086 1.5664C3.34638 14.4282 0 11.2942 0 11.2942Z"/></svg>
+                    </button>
+                    <button>
+                        <svg role="img" width="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Showpad</title><path d="M24 11.9872c0-.0894 0-.1787-.0128-.2808v-.0383c0-.0766-.0127-.1532-.0127-.2426v-.0128c-.2681-2.5787-2.3107-4.6085-4.8766-4.8766h-.0128c-.0766-.0128-.1532-.0128-.2426-.0128h-.0383c-.0893 0-.1787-.0128-.2808-.0128-1.4553 0-2.8468.5745-3.868 1.6086l-1.864 1.851 1.3533 1.3532 1.3404-1.3532h-.0128l.5107-.5105c.6638-.6766 1.583-1.0468 2.5276-1.0468h.2043c.051 0 .1021 0 .1532.0128h.0128c1.685.1787 3.0127 1.5063 3.1787 3.1787v.0128c0 .051.0128.1021.0128.1532v.4084c0 .0511-.0128.1022-.0128.1532-.1277 1.2255-.8809 2.2979-1.9787 2.834l-.0383.0129a.3813.3813 0 0 0-.1022.051l-.0766.0256-.0638.0255-.1149.0383-.0255.0128c-1.2894.4468-2.7192.1148-3.6894-.8554l-.4979-.4979-3.3702-3.3574-5.3617-5.3617-1.3532 1.3532L0 12l1.3532 1.3532 5.3872 5.3872 1.3532-1.3532 3.3702-3.3702-1.3532-1.3532-3.3702 3.3702L2.6936 12l4.0468-4.0468 2.017 2.0298 5.3873 5.3872.4979.4979c1.0212 1.034 2.4255 1.6085 3.8808 1.5957.6128 0 1.2128-.102 1.7872-.2936l.0511-.0128c.051-.0255.1149-.0383.166-.0638l.102-.0383.1022-.051.1532-.0767.051-.0255c1.698-.8298 2.8469-2.4766 3.0511-4.3532.0128-.0766.0128-.166.0128-.2425v-.3192z"/></svg>
+                    </button>
+                    <button>
+                        <svg role="img" width="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spreadshirt</title><path d="M12 6.306L7.796 2.102 0 9.898l12 12 12-12-7.796-7.796zm0 12L3.592 9.898l4.204-4.204L12 9.898l4.184-4.184 4.204 4.204"/></svg>
+                    </button>
+                </div>  
+            </article>
+        </section>
+    </header>
+
+    <main id="main">
+        <aside id="aside">
+            <div id="aside-container">
+                <div id="logo-container">
+                    <svg id="the-finals-logo" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>THE FINALS</title><path d="M18.523 19.319H24L14.965 6.295c-.626-.904-1.51-1.614-2.847-1.614-1.38 0-2.264.775-2.889 1.614L0 19.319h5.261l3.372-4.759 3.256 4.759h5.478l-5.934-8.712.599-.846 6.491 9.558Zm0 0"/></svg>
+                    <h2>BUILDIFY</h2>
+                </div>
+                <div class="separator"></div>
+                <ul class="admin-side-bar">
+                    <li class="admin-side-bar-option">
+                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0.875C5.49797 0.875 3.875 2.49797 3.875 4.5C3.875 6.15288 4.98124 7.54738 6.49373 7.98351C5.2997 8.12901 4.27557 8.55134 3.50407 9.31167C2.52216 10.2794 2.02502 11.72 2.02502 13.5999C2.02502 13.8623 2.23769 14.0749 2.50002 14.0749C2.76236 14.0749 2.97502 13.8623 2.97502 13.5999C2.97502 11.8799 3.42786 10.7206 4.17091 9.9883C4.91536 9.25463 6.02674 8.87499 7.49995 8.87499C8.97317 8.87499 10.0846 9.25463 10.8291 9.98831C11.5721 10.7206 12.025 11.8799 12.025 13.5999C12.025 13.8623 12.2376 14.0749 12.5 14.0749C12.7623 14.075 12.975 13.8623 12.975 13.6C12.975 11.72 12.4778 10.2794 11.4959 9.31166C10.7244 8.55135 9.70025 8.12903 8.50625 7.98352C10.0187 7.5474 11.125 6.15289 11.125 4.5C11.125 2.49797 9.50203 0.875 7.5 0.875ZM4.825 4.5C4.825 3.02264 6.02264 1.825 7.5 1.825C8.97736 1.825 10.175 3.02264 10.175 4.5C10.175 5.97736 8.97736 7.175 7.5 7.175C6.02264 7.175 4.825 5.97736 4.825 4.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <h3>Ajustes de administrador</h3>
+                    </li>
+                    <li class="admin-side-bar-option">
+                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 1C11.7761 1 12 1.22386 12 1.5V13.5C12 13.7761 11.7761 14 11.5 14C11.2239 14 11 13.7761 11 13.5V1.5C11 1.22386 11.2239 1 11.5 1ZM9.5 3C9.77614 3 10 3.22386 10 3.5V13.5C10 13.7761 9.77614 14 9.5 14C9.22386 14 9 13.7761 9 13.5V3.5C9 3.22386 9.22386 3 9.5 3ZM13.5 3C13.7761 3 14 3.22386 14 3.5V13.5C14 13.7761 13.7761 14 13.5 14C13.2239 14 13 13.7761 13 13.5V3.5C13 3.22386 13.2239 3 13.5 3ZM5.5 4C5.77614 4 6 4.22386 6 4.5V13.5C6 13.7761 5.77614 14 5.5 14C5.22386 14 5 13.7761 5 13.5V4.5C5 4.22386 5.22386 4 5.5 4ZM1.5 5C1.77614 5 2 5.22386 2 5.5V13.5C2 13.7761 1.77614 14 1.5 14C1.22386 14 1 13.7761 1 13.5V5.5C1 5.22386 1.22386 5 1.5 5ZM7.5 5C7.77614 5 8 5.22386 8 5.5V13.5C8 13.7761 7.77614 14 7.5 14C7.22386 14 7 13.7761 7 13.5V5.5C7 5.22386 7.22386 5 7.5 5ZM3.5 7C3.77614 7 4 7.22386 4 7.5V13.5C4 13.7761 3.77614 14 3.5 14C3.22386 14 3 13.7761 3 13.5V7.5C3 7.22386 3.22386 7 3.5 7Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <h3>Estadisticas</h3>
+                    </li>
+                    <li class="admin-side-bar-option">
+                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 5.25C1.91421 5.25 2.25 4.91421 2.25 4.5C2.25 4.08579 1.91421 3.75 1.5 3.75C1.08579 3.75 0.75 4.08579 0.75 4.5C0.75 4.91421 1.08579 5.25 1.5 5.25ZM4 4.5C4 4.22386 4.22386 4 4.5 4H13.5C13.7761 4 14 4.22386 14 4.5C14 4.77614 13.7761 5 13.5 5H4.5C4.22386 5 4 4.77614 4 4.5ZM4.5 7C4.22386 7 4 7.22386 4 7.5C4 7.77614 4.22386 8 4.5 8H13.5C13.7761 8 14 7.77614 14 7.5C14 7.22386 13.7761 7 13.5 7H4.5ZM4.5 10C4.22386 10 4 10.2239 4 10.5C4 10.7761 4.22386 11 4.5 11H13.5C13.7761 11 14 10.7761 14 10.5C14 10.2239 13.7761 10 13.5 10H4.5ZM2.25 7.5C2.25 7.91421 1.91421 8.25 1.5 8.25C1.08579 8.25 0.75 7.91421 0.75 7.5C0.75 7.08579 1.08579 6.75 1.5 6.75C1.91421 6.75 2.25 7.08579 2.25 7.5ZM1.5 11.25C1.91421 11.25 2.25 10.9142 2.25 10.5C2.25 10.0858 1.91421 9.75 1.5 9.75C1.08579 9.75 0.75 10.0858 0.75 10.5C0.75 10.9142 1.08579 11.25 1.5 11.25Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <h3>Stock de productos</h3>
+                    </li>
+                    <li class="admin-side-bar-option">
+                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0C7.77614 0 8 0.223858 8 0.5V2.5C8 2.77614 7.77614 3 7.5 3C7.22386 3 7 2.77614 7 2.5V0.5C7 0.223858 7.22386 0 7.5 0ZM2.1967 2.1967C2.39196 2.00144 2.70854 2.00144 2.90381 2.1967L4.31802 3.61091C4.51328 3.80617 4.51328 4.12276 4.31802 4.31802C4.12276 4.51328 3.80617 4.51328 3.61091 4.31802L2.1967 2.90381C2.00144 2.70854 2.00144 2.39196 2.1967 2.1967ZM0.5 7C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8H2.5C2.77614 8 3 7.77614 3 7.5C3 7.22386 2.77614 7 2.5 7H0.5ZM2.1967 12.8033C2.00144 12.608 2.00144 12.2915 2.1967 12.0962L3.61091 10.682C3.80617 10.4867 4.12276 10.4867 4.31802 10.682C4.51328 10.8772 4.51328 11.1938 4.31802 11.3891L2.90381 12.8033C2.70854 12.9986 2.39196 12.9986 2.1967 12.8033ZM12.5 7C12.2239 7 12 7.22386 12 7.5C12 7.77614 12.2239 8 12.5 8H14.5C14.7761 8 15 7.77614 15 7.5C15 7.22386 14.7761 7 14.5 7H12.5ZM10.682 4.31802C10.4867 4.12276 10.4867 3.80617 10.682 3.61091L12.0962 2.1967C12.2915 2.00144 12.608 2.00144 12.8033 2.1967C12.9986 2.39196 12.9986 2.70854 12.8033 2.90381L11.3891 4.31802C11.1938 4.51328 10.8772 4.51328 10.682 4.31802ZM8 12.5C8 12.2239 7.77614 12 7.5 12C7.22386 12 7 12.2239 7 12.5V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V12.5ZM10.682 10.682C10.8772 10.4867 11.1938 10.4867 11.3891 10.682L12.8033 12.0962C12.9986 12.2915 12.9986 12.608 12.8033 12.8033C12.608 12.9986 12.2915 12.9986 12.0962 12.8033L10.682 11.3891C10.4867 11.1938 10.4867 10.8772 10.682 10.682ZM5.5 7.5C5.5 6.39543 6.39543 5.5 7.5 5.5C8.60457 5.5 9.5 6.39543 9.5 7.5C9.5 8.60457 8.60457 9.5 7.5 9.5C6.39543 9.5 5.5 8.60457 5.5 7.5ZM7.5 4.5C5.84315 4.5 4.5 5.84315 4.5 7.5C4.5 9.15685 5.84315 10.5 7.5 10.5C9.15685 10.5 10.5 9.15685 10.5 7.5C10.5 5.84315 9.15685 4.5 7.5 4.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <h3>Configuracion de interfaz</h3>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section id="content">
+            <h2>STOCK</h2>
+            <section id="stock-container-section">
+
+                <!-- category stand -->
+                <article class="stock-container-article">
+                    <h3>Categorias</h3>
+                    <ul class="categoria-busqueda">
+                        <li>TODAS</li>
+                        <li>Tarjetas Graficas</li>
+                        <li>Procesadores</li>
+                        <li>RAM's</li>
+                        <li>Boards</li>
+                        <li>Chasis</li>
+                        <li>Refrigeraciones</li>
+                    </ul>
+                </article>
+
+
+
+                <article class="stock-container-article">
+                    <h3>Tarjetas Graficas</h3>
+                    <div id="search-options-div">
+                        <input type="text" id="stock-search-bar" placeholder="Busca aqui tu producto">
+                        <select name="brand" id="">
+                            <option value="">opcion 1</option>
+                            <option value="">opcion 2</option>
+                            <option value="">opcion 3</option>
+                        </select>
+                        <select name="brand" id="">
+                            <option value="">opcion 1</option>
+                            <option value="">opcion 2</option>
+                            <option value="">opcion 3</option>
+                        </select>
+                        <input type="range" name="" id="">
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Precio</th>
+                                <th>Unidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ryzen</td>
+                                <td>5600 gx</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Intel</td>
+                                <td>Core i9</td>
+                                <td>$ 5.400.000</td>
+                                <td>45</td>
+                            </tr>   
+
+                        </tbody>
+                    </table>
+
+                </article>
+
+                <article class="stock-container-article">
+                    <h3>Informacion</h3>
+                    <div class="informacion-div">
+                        <h4>Mas vendido del mes:</h4>
+
+                    </div>
+                    <div class="informacion-div">
+                        <h4>Mas vendido global:</h4>
+
+                    </div>
+                    <div class="informacion-div">
+                        <h4>Mas asequible</h4>
+
+                    </div>
+                    <div class="informacion-div">
+                        <h4>Mas Costoso:</h4>
+
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        He aqui el footer que tanto esperabas
+        <br>
+        <h3>FOLLOW US</h3>
+        <ul>
+            <li>intagram</li>
+            <li>Facebook</li>
+            <li>Youtube</li>
+        </ul>
+    </footer>
+</body>
+</html>
